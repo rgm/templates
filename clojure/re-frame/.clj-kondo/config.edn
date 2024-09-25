@@ -1,0 +1,5 @@
+{:linters {:consistent-alias {:aliases {re-frame.core rf
+                                        reagent.core rg}}
+           :unresolved-symbol {:exclude [(reagent.core/with-let)]}
+           :unused-namespace {:exclude [taoensso.telemere]}}}
+
