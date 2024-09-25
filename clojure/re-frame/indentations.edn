@@ -1,0 +1,5 @@
+{rf/reg-cofx     [[:inner 0]]
+ rf/reg-event-db [[:inner 0]]
+ rf/reg-event-fx [[:inner 0]]
+ rf/reg-fx       [[:inner 0]]
+ rf/reg-sub      [[:inner 0]]}

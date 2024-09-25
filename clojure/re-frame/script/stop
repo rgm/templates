@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# stop system
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+overmind q

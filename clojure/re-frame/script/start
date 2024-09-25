@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# start system
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+overmind start -D

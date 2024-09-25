@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# archive a release bundle to /releases with today's date
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+script/clean
+
+ts=$(date +"%Y%m%d")
+npx shadow-cljs release app
+mkdir -p "releases/$ts"
+cp -R public "releases/$ts"

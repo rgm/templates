@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# remove build products
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+rm -rf public/dist

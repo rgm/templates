@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# format all code
+# provide a command ('fix' or 'check') as the argument to this script
+# see https://github.com/weavejester/cljfmt#toolsdeps
+
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+clojure -Sdeps '{:deps {cljfmt/cljfmt {:mvn/version "RELEASE"}}}' \
+  -M -m cljfmt.main \
+  --indents .indentation.clj \
+  "$@"

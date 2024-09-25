@@ -1,0 +1,12 @@
+{:builds
+ {:app
+  {:asset-path "/dist"
+   :dev {:compiler-options {:closure-defines {}}}
+   :devtools {:preloads [day8.re-frame-10x.preload.react-18]}
+   :modules {:main {:entries [app.main]}}
+   :output-dir "public/dist"
+   :release {:build-options {:ns-aliases {}}
+             :compiler-options {:closure-defines {}}}
+   :target :browser}}
+ :deps true
+ :dev-http {9000 "public"}}
