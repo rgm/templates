@@ -10,7 +10,7 @@
 
 (defn ^:dev/after-load start []
   (rf/clear-subscription-cache!)
-  (.render @*REACT-ROOT (rg/as-element [app.views/Root])))
+  (.render (deref *REACT-ROOT) (rg/as-element [app.views/Root])))
 
 (defn ^:export init []
   (rf/dispatch-sync [:init-app-db])

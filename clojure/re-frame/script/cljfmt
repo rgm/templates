@@ -9,5 +9,5 @@ cd "$(dirname "$0")/.."
 
 clojure -Sdeps '{:deps {cljfmt/cljfmt {:mvn/version "RELEASE"}}}' \
   -M -m cljfmt.main \
-  --indents .indentation.clj \
+  --indents .indentation.edn \
   "$@"
