@@ -1,4 +1,5 @@
 (ns app.state
+  "Manage and peer into the app-db."
   (:require
    [re-frame.core :as rf]))
 
